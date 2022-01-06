@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "75362641",
+    "project_id": "funday-eb035",
+    "storage_bucket": "funday-eb035.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75362641:android:503325d35cc6268173a370",
+        "android_client_info": {
+          "package_name": "com.reemsd.funday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75362641-233bds5p9dbm1lu6logofq64i3c51iic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO4jrddV4K4EmAe8hxwrtGo9AUhZfj-XY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75362641-233bds5p9dbm1lu6logofq64i3c51iic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
