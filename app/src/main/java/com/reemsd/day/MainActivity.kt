@@ -1,11 +1,12 @@
 package com.reemsd.day
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.ActivityNavigator
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.reemsd.day.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +27,10 @@ class MainActivity : AppCompatActivity() {
 
         navController = navHostFragment.navController
         setupActionBarWithNavController(navController)
+
+        val BottomNavigationView = findViewById<BottomNavigationView>(R.id.btn_nav)
+        BottomNavigationView.setupWithNavController(navController)
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

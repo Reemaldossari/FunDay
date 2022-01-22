@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.reemsd.day.main.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        android:name="com.reemsd.day.user.MainFragment"
+        android:label="@string/user"
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
@@ -18,56 +18,32 @@
             app:destination="@id/loginFragment" />
     </fragment>
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.reemsd.day.home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_placesFragment"
-            app:destination="@id/placesFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/loginFragment"
-        android:name="com.reemsd.day.login.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
-        <action
-            android:id="@+id/action_loginFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
+        android:name="com.reemsd.day.user.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login">
+
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.reemsd.day.register.RegisterFragment"
-        android:label="fragment_register"
-        tools:layout="@layout/fragment_register" >
-        <action
-            android:id="@+id/action_registerFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
+        android:name="com.reemsd.day.user.RegisterFragment"
+        tools:layout="@layout/fragment_register"
+        android:label="@string/register">
         <action
             android:id="@+id/action_registerFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+
     </fragment>
     <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.reemsd.day.search.SearchFragment"
-        android:label="fragment_search"
-        tools:layout="@layout/fragment_search" >
-        <action
-            android:id="@+id/action_searchFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-    </fragment>
+        android:id="@+id/homeFragment"
+        android:name="com.reemsd.day.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/detailsFragment"
-        android:name="com.reemsd.day.details.DetailsFragment"
-        android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
-    <fragment
-        android:id="@+id/placesFragment"
-        android:name="com.reemsd.day.search.places.PlacesFragment"
-        android:label="fragment_places"
-        tools:layout="@layout/fragment_places" >
-        <action
-            android:id="@+id/action_placesFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
-    </fragment>
+        android:id="@+id/planFragment"
+        android:name="com.reemsd.day.plan.PlanFragment"
+        android:label="@string/plan"
+        tools:layout="@layout/fragment_plan" />
+
+
 </navigation>

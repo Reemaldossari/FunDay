@@ -2,4 +2,11 @@
     <string name="app_name">FunDay</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="web_client">75362641-233bds5p9dbm1lu6logofq64i3c51iic.apps.googleusercontent.com/></string>
+    <string name="content_description_media">string/content_description_media</string>
+    <string name="user">User</string>
+    <string name="home">Home</string>
+    <string name="plan">Plan</string>
+    <string name="log_in">Log in</string>
+    <string name="register">Register</string>
+    <string name="login">login</string>
 </resources>
