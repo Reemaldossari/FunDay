@@ -10,7 +10,7 @@ import com.reemsd.day.network.TopPlaces
 
 
 class PlacesAdapter : ListAdapter<TopPlaces, PlacesAdapter.PetViewHolder>(DiffCallback) {
-    class PetViewHolder( var binding: ListItemBinding): RecyclerView.ViewHolder(binding.root) {
+    class PetViewHolder(var binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(views: TopPlaces) {
             binding.result = views
@@ -20,6 +20,7 @@ class PlacesAdapter : ListAdapter<TopPlaces, PlacesAdapter.PetViewHolder>(DiffCa
             binding.executePendingBindings()
         }
     }
+
     /**
      * Allows the RecyclerView to determine which items have changed when the [List] of
      * has been updated.
@@ -33,6 +34,7 @@ class PlacesAdapter : ListAdapter<TopPlaces, PlacesAdapter.PetViewHolder>(DiffCa
             return oldItem.image == newItem.image
         }
     }
+
     /**
      * Create new [RecyclerView] item views (invoked by the layout manager)
      */

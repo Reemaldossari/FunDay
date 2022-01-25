@@ -9,4 +9,8 @@
     <string name="login">تسجيل الدخول</string>
     <string name="title2">title1</string>
     <string name="title1">title2</string>
+    <string name="Deleted_Successfully">"تم الحذف بنجاح "</string>
+    <string name="Are_you_Sure_to_delete">هل أنت متأكد من الحذف ؟</string>
+    <string name="delete">الحذف</string>
+    <string name="no">لا</string>
 </resources>

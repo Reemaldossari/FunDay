@@ -38,7 +38,11 @@
         android:id="@+id/homeFragment"
         android:name="com.reemsd.day.home.HomeFragment"
         android:label="@string/home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_prefrenceFragment"
+            app:destination="@id/prefrenceFragment" />
+    </fragment>
     <fragment
         android:id="@+id/planFragment"
         android:name="com.reemsd.day.plan.PlanFragment"
@@ -73,6 +77,10 @@
             android:id="@+id/action_editPlanFragment_to_planFragment"
             app:destination="@id/planFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/prefrenceFragment"
+        android:name="com.reemsd.day.prefrence.PrefrenceFragment"
+        android:label="PrefrenceFragment" />
 
 
 </navigation>

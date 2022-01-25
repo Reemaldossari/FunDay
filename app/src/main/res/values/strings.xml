@@ -17,4 +17,11 @@
     <string name="Are_you_Sure_to_delete">Are you Sure to delete?</string>
     <string name="no">No</string>
     <string name="delete">Delete</string>
+    <string name="theme_preferences_key">themKey</string>
+    <string name="system_theme_preference_value">systemTeheme</string>
+    <string name="dark_theme_preference_value">dark</string>
+    <string name="light_theme_preference_value">light</string>
+    <string name="system_theme_description">systemTheme</string>
+    <string name="dark_theme_description">darkDesc</string>
+    <string name="light_theme_description">lightDesc</string>
 </resources>
