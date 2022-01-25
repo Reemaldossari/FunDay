@@ -27,8 +27,10 @@ class HomeFragment : Fragment() {
         binding.viewModelHome = viewModel
        binding?.homeRv.adapter = PlacesAdapter()
         return  binding.root
+
+
     }
 
 
-            }
+}
 

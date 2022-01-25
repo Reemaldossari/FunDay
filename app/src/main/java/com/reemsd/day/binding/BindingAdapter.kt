@@ -8,7 +8,9 @@ import com.bumptech.glide.Glide
 import com.reemsd.day.R
 import com.reemsd.day.home.ApiStatus
 import com.reemsd.day.home.PlacesAdapter
+import com.reemsd.day.network.PlanData
 import com.reemsd.day.network.TopPlaces
+import com.reemsd.day.plan.UserPlanAdapter
 
 // get data and convert from link to image .
 @BindingAdapter("imageUrl")
@@ -31,7 +33,11 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<TopPlaces>?){
     val adapter = recyclerView.adapter as PlacesAdapter
     adapter.submitList(data)
 }
-
+@BindingAdapter("userPlan")
+fun bindUserPlan(recyclerView: RecyclerView, data: List<PlanData>?){
+    val UserplanAdapter = recyclerView.adapter as UserPlanAdapter
+    UserplanAdapter.submitList(data)
+}
 @BindingAdapter("apiStatus")
 fun ImageView.bindStatus(status: ApiStatus){
     when (status){

@@ -43,7 +43,36 @@
         android:id="@+id/planFragment"
         android:name="com.reemsd.day.plan.PlanFragment"
         android:label="@string/plan"
-        tools:layout="@layout/fragment_plan" />
+        tools:layout="@layout/fragment_plan" >
+        <action
+            android:id="@+id/action_planFragment_to_addPlanFragment"
+            app:destination="@id/addPlanFragment" />
+        <action
+            android:id="@+id/action_planFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_planFragment_to_editPlanFragment"
+            app:destination="@id/editPlanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPlanFragment"
+        android:name="com.reemsd.day.plan.AddPlanFragment"
+        android:label="AddPlanFragment" >
+        <action
+            android:id="@+id/action_addPlanFragment_to_planFragment"
+            app:destination="@id/planFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPlanFragment"
+        android:name="com.reemsd.day.plan.EditPlanFragment"
+        android:label="EditPlanFragment" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_editPlanFragment_to_planFragment"
+            app:destination="@id/planFragment" />
+    </fragment>
 
 
 </navigation>

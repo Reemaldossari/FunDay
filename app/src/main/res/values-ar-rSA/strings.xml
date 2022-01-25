@@ -7,4 +7,6 @@
     <string name="log_in">تسجيل الدخول</string>
     <string name="register">تسجيل جديد</string>
     <string name="login">تسجيل الدخول</string>
+    <string name="title2">title1</string>
+    <string name="title1">title2</string>
 </resources>
