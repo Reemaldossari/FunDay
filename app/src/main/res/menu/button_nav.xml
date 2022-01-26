@@ -11,4 +11,6 @@
     <item android:title="User" android:icon="@drawable/ic_baseline_person_24"
         android:id="@+id/mainFragment"
         />
+    <item android:title="Setting" android:icon="@drawable/settings"
+        android:id="@+id/prefrenceFragment"/>
 </menu>

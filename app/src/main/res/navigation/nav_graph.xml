@@ -38,11 +38,7 @@
         android:id="@+id/homeFragment"
         android:name="com.reemsd.day.home.HomeFragment"
         android:label="@string/home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_prefrenceFragment"
-            app:destination="@id/prefrenceFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/planFragment"
         android:name="com.reemsd.day.plan.PlanFragment"
