@@ -2,4 +2,26 @@
     <string name="app_name">FunDay</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="web_client">75362641-233bds5p9dbm1lu6logofq64i3c51iic.apps.googleusercontent.com/></string>
+    <string name="content_description_media">string/content_description_media</string>
+    <string name="user">User</string>
+    <string name="home">Home</string>
+    <string name="plan">Plan</string>
+    <string name="log_in">Log in</string>
+    <string name="register">Register</string>
+    <string name="login">login</string>
+    <string name="title2">title1</string>
+    <string name="title1">title2</string>
+    <string name="title3">title3</string>
+    <string name="Deleted_Successfully">Deleted Successfully</string>
+    <string name="An_error_occurred">An error occurred</string>
+    <string name="Are_you_Sure_to_delete">Are you Sure to delete?</string>
+    <string name="no">No</string>
+    <string name="delete">Delete</string>
+    <string name="theme_preferences_key">themKey</string>
+    <string name="system_theme_preference_value">systemTeheme</string>
+    <string name="dark_theme_preference_value">dark</string>
+    <string name="light_theme_preference_value">light</string>
+    <string name="system_theme_description">systemTheme</string>
+    <string name="dark_theme_description">darkDesc</string>
+    <string name="light_theme_description">lightDesc</string>
 </resources>

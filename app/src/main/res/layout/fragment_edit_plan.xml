@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".plan.AddPlanFragment">
+
+        <!--region $title -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/title_place"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="16dp"
+            app:helperText=""
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toTopOf="@+id/place_place"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/title_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Title"
+                android:text=""
+                android:inputType="text"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--endregion-->
+        <!--region $title -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/place_place"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginHorizontal="20dp"
+            app:helperText=""
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_place">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/place_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:hint="Place"
+                android:inputType="text"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--endregion-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cost_place"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginHorizontal="20dp"
+            app:helperText=""
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/place_place">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cost_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Cost"
+                android:text=""
+                android:inputType="text"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--endregion-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/invited_place"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginHorizontal="20dp"
+            app:helperText=""
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cost_place">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/invited_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Invited"
+                android:text=""
+                android:inputType="text"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--endregion-->
+
+        <!--endregion-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/details_place"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginHorizontal="20dp"
+            app:helperText=""
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/invited_place">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/details_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:hint="Details"
+                android:inputType="text"
+                android:lines="5" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--endregion-->
+
+        <Button
+            android:id="@+id/edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:text="Edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_place"
+            app:layout_constraintVertical_bias="0.125" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

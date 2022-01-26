@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FunDay</string>
+    <string name="user">المستخدم</string>
+    <string name="home">الرئيسية</string>
+    <string name="plan">الخطط</string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="register">تسجيل جديد</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="title2">title1</string>
+    <string name="title1">title2</string>
+    <string name="Deleted_Successfully">"تم الحذف بنجاح "</string>
+    <string name="Are_you_Sure_to_delete">هل أنت متأكد من الحذف ؟</string>
+    <string name="delete">الحذف</string>
+    <string name="no">لا</string>
+</resources>
